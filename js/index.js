@@ -21,7 +21,7 @@ while (playerWantsToContinue){
                 if(userGuessLowerCase==="rock" || userGuessLowerCase === "paper" || userGuessLowerCase==="scissors"){
                     userPickedValidOption = true;
                     // console.log("User guess is: " + userGuessLowerCase);
-                }else{
+                }{
                     // console.log("User didn't pick a valid choice");
                 }
             }   
