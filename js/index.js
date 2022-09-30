@@ -5,6 +5,8 @@ let playerWantsToContinue = true;
 // while (playerWantsToContinue = true){
 while (playerWantsToContinue){
     // Ask user for guess (rock, paper, or scissor), sets it to lower case, and keeps asking until user provides requested input
+    
+
     let userGuess
     let userGuessLowerCase
     let userPickedValidOption = false;
@@ -13,9 +15,9 @@ while (playerWantsToContinue){
         userGuessLowerCase = userGuess.toLowerCase();
         if(userGuessLowerCase==="rock" || userGuessLowerCase === "paper" || userGuessLowerCase==="scissors"){
             userPickedValidOption = true;
-            console.log("User guess is: " + userGuessLowerCase);
+            // console.log("User guess is: " + userGuessLowerCase);
         }else{
-            console.log("User didn't pick a valid choice");
+            // console.log("User didn't pick a valid choice");
         }
     }
 
@@ -30,48 +32,59 @@ while (playerWantsToContinue){
     }else{
         pcGuess = "scissors";
     }
-    console.log("PC guess is: " + pcGuess);
+    // console.log("PC guess is: " + pcGuess);
 
     // rock beats scissors
     // if user guessed rock and pc guessed scissors
     // print user wins
     if (userGuessLowerCase == "rock" && pcGuess === "scissors"){
-        console.log("You win!")
+        // console.log("You win!");
+        alert("You guessed " + userGuessLowerCase + "\nPC guessed " + pcGuess + "\nYou win!");
     }
     // if pc guessed rock and user guessed scissors
     // print pc wins
     if (userGuessLowerCase == "scissors" && pcGuess === "rock"){
-        console.log("You lose...")
+        // console.log("You lose...");
+        alert("You guessed " + userGuessLowerCase + "\nPC guessed " + pcGuess + "\nYou lose...");
     }
 
     // paper beats rock
     // if user guessed paper and pc guessed rock 
     // print user wins
     if (userGuessLowerCase == "paper" && pcGuess === "rock"){
-        console.log("You win!")
+        // console.log("You win!");
+        alert("You guessed " + userGuessLowerCase + "\nPC guessed " + pcGuess + "\nYou win!");
     }
     // if pc guessed paper and user guessed rock 
     // print pc wins
     if (userGuessLowerCase == "rock" && pcGuess === "paper"){
-        console.log("You lose...")
+        // console.log("You lose...");
+        alert("You guessed " + userGuessLowerCase + "\nPC guessed " + pcGuess + "\nYou lose...");
+
     }
 
     // scissors beats paper
     // if user guessed scissors and pc guessed paper
     // print user wins
     if (userGuessLowerCase == "scissors" && pcGuess === "paper"){
-        console.log("You win!")
+        // console.log("You win!");
+        alert("You guessed " + userGuessLowerCase + "\nPC guessed " + pcGuess + "\nYou win!");
+
     }
     // if pc guessed scissors and user guessed paper
     // print pc wins
     if (userGuessLowerCase == "paper" && pcGuess === "scissors"){
-        console.log("You lose...")
+        // console.log("You lose...");
+        alert("You guessed " + userGuessLowerCase + "\nPC guessed " + pcGuess + "\nYou lose...");
+
     }
 
     // if user guess = pc guess
     // print tie
     if(userGuessLowerCase === pcGuess){
-        console.log("It's a tie...")
+        // console.log("It's a tie...");
+        alert("You guessed " + userGuessLowerCase + "\nPC guessed " + pcGuess + "\nIt's a tie...");
+
     }
 
     // set playerWantsToContinue = ask if player wants to continue (y for yes, n for no)
