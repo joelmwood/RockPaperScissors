@@ -10,10 +10,21 @@
 </head>
 
 <body>
-    <button>Rock</button>
-    <button>Paper</button>
-    <button>Scissors</button>
-
+    <div class="buttons">
+        <h2>Make a choice</h2>
+        <button id="rock" onclick="playerChose(this);">Rock</button>
+        <button id="paper" onclick="playerChose(this);">Paper</button>
+        <button id="scissors" onclick="playerChose(this);">Scissors</button>
+    </div>
+    <div class="score">
+        <h2>Results:</h2>
+        <p id="playerGuess">You chose:</p>
+        <p id="pcGuess">PC chose:</p>
+        <p id="winnerOfRound">Winner:</p>
+        <p id="userScore">User Score:</p>
+        <p id="pcScore">PC Score:</p>
+        <p id="ties">Ties:</p>
+    </div>
 
     <script src="./js/index.js"></script>
 </body>
